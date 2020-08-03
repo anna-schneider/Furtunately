@@ -5,15 +5,25 @@ import "./App.css"
 import Home from "./Home.js"
 import Header from "./Header.js"
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<Home />
-				<Header />
-			</div>
+function App() {
+	const apiCall = async () => {
+		const data = await Axios(
+			"https://api.airtable.com/v0/appBngxxdOcilCD4C/Table%201",
+			{
+				headers: {
+					Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+				},
+			}
 		)
+		console.log(data.data.records)
 	}
+	apiCall()
+
+	return (
+		<div>
+			<Header />
+		</div>
+	)
 }
 
 export default App

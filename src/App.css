@@ -1,3 +1,19 @@
+@font-face {
+	font-family: "Circus";
+	src: url("/css/webfont/Circus.eot?#iefix") format("embedded-opentype"),
+		url("/css/webfont/Circus.woff") format("woff"),
+		url("/css/webfont/Circus.ttf") format("truetype"),
+		url("/css/webfont/Circus.svg#Circus") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 .App {
 	text-align: center;
+}
+
+h1 {
+	font-family: "Circus";
+	text-align: center;
+	font-size: 60px;
 }
