@@ -1,92 +1,49 @@
-# PROJECT 2 README <!-- omit in toc -->
-
-- [Project Planning](#Project-Planning)
-  - [Overview](#Overview)
-  - [Wireframes](#Wireframes)
-  - [MVP](#MVP)
-    - [Goals](#Goals)
-    - [Libraries](#Libraries)
-    - [Data](#Data)
-    - [Component Hierarchy](#Component-Hierarchy)
-    - [Component Breakdown](#Component-Breakdown)
-    - [Component Estimates](#Component-Estimates)
-    - [Helper Functions](#Helper-Functions)
-  - [Post-MVP](#Post-MVP)
-- [Project Delivery](#Project-Delivery)
-  - [Code Showcase](#Code-Showcase)
-  - [Code Issues & Resolutions](#Code-Issues--Resolutions)
-
-## Project Planning
-
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
-<br>
 
 ### Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+Fortunately is a fortune-telling app. A player can either choose from a selection of topics to ask a question, or submit their own custom question. 
+The player will then see their results along with their lucky numbers. 
 
-<br>
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+- Mobile/Tablet Landing
 
-![Dummy Link](url)
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417126/Fortunately/Homepage_mobile_tablet_kgbmwk.pdf
+
+- Mobile/Tablet Body
+
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417126/Fortunately/Homepage_mobile_tablet_kgbmwk.pdf
 
 - Desktop Landing
 
-![Dummy Link](url)
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417159/Fortunately/Homepage_desktop_ekpbsa.pdf
+- Desktop Resource Show
 
 - Desktop Body
 
-![Dummy Link](url)
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417170/Fortunately/Results_desktop_ug2zue.pdf
 
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
-<br>
 
 ### MVP
 
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-<br>
-
 #### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- App returns API data.
+- App can take a user input question.
+- App uses React Class & Function Components.
+- App routes to results page and additionally renders random "lucky" numbers
 
-<br>
 
 #### Libraries
 
 > Use this section to list all supporting libraries and their role in the project.
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library        | Description                                |
+| :----------------: | :----------------------------------------- |
+|   React Router     | _For main site navigation._                |
+|   React Bootstrap  | _For styling resources._                   |
+|   Axios            | _For API data._                            |
 
 <br>
 
@@ -94,30 +51,41 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
 
-|    API     | Quality Docs? | Website       | Sample Query                            |
-| :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+|    API       | Quality Docs? | Website                                   | Sample Query                            |
+| :--------:   | :-----------: | :-----------------------------------------| :-------------------------------------- |
+| Affirmations |      yes      | https://github.com/annthurium/affirmations| See below                               |
 
-<br>
+{
+    "affirmation": "Nothing is impossible. The word itself says 'I’m possible!'"
+}
+{
+    "affirmation":"Sucking at something is the first step towards being good at something"
+}
+{
+    "affirmation": "Small progress is still progress"
+}
+{
+    "affirmation": "The path to success is to take massive, determined action"
+}
+{
+    "affirmation": "I admire you for taking this on"
+}
 
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
 |__ assets/
-      |__ data-tests
       |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
+      |__ Home.jsx
+      |__ Results.jsx
+      |__ Form.jsx
+      |__ Buttons.jsx
+      |__ Numbers.jsx
+      |__ Scratch.jsx
       |__ Footer.jsx
 ```
 
@@ -125,31 +93,34 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component   |    Type    | state | props | Description                                                          |
+| :----------: | :--------: | :---: | :---: | :------------------------------------------------------------------- |
+|    Header    | functional |   n   |   n   | _The header will contain the logo._                                  |
+|    Home      |   class    |   n   |   y   | _The homepage will render the options in flexbox._                   |
+|    Results   |   class    |   n   |   y   | _The results page will render the API call & random #'s._            |
+|    Form      |   class    |   y   |   n   | _The form will take input to create field in Airtable._              |
+|    Buttons   |   class    |   y   |   y   | _The buttons will link between the two views._                       |
+|    Numbers   |   class    |   y   |   y   | _The numbers will render in results view._                           |
+|    Scratch   |   class    |   y   |   y   | _The scratch will animate the numbers in results view._              |
+|    Footer    | functional |   n   |   n   | _The footer will show info about me and the API used._               |
 
-<br>
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Code Components	    |    H	   |     8 hrs	    |     0 hrs	    |    0 hrs    |
+| Setup State & API 	|    H     |     6 hrs	    |     0 hrs	    |    0 hrs    |
+| Setup Route/Link	  |    H	   |     4 hrs	    |     0 hrs	    |    0 hrs    |
+| CSS                 |    L     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Responsive design   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
+| Post MVP            |    L     |     5 hrs      |     0 hrs     |    0 hrs    |
+| TOTAL               |          |     35 hrs     |     0 hrs     |    0 hrs    |
 
-<br>
+
 
 #### Helper Functions
 
@@ -157,22 +128,16 @@ src
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
+| TBD        |                                            |
 
 <br>
 
 ### Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- CSS animations_
 
-- _Add user account and auth capabilities._
-- _Utilize the Giphy API to welcome new users with funny gifs._
-
-<br>
 
 ***
-
-## Project Delivery
 
 ### Code Showcase
 
