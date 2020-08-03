@@ -18,7 +18,6 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417126/Fortunately/Homepa
 - Desktop Landing
 
 https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417159/Fortunately/Homepage_desktop_ekpbsa.pdf
-- Desktop Resource Show
 
 - Desktop Body
 
