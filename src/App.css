@@ -25,10 +25,11 @@ h2 {
 	color: rgb(91 91 91);
 }
 
-.Buttons {
+Buttons {
 	display: flex;
-	/* flex-wrap: wrap; */
-	/* flex-direction: column; */
+	flex-wrap: wrap;
+	/* flex-direction: row; */
 	justify-content: center;
 	/* border: 2px solid red; */
+	font-family: "Rye";
 }

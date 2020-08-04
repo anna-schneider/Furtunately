@@ -30,7 +30,7 @@ const Home = () => {
 			<div>
 				{questions.map((item, index) => {
 					return (
-						<div className="Buttons">
+						<div className="home-buttons">
 							<Buttons key={index} text={item.fields.areas} />
 						</div>
 					)
