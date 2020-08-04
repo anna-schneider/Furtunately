@@ -5,6 +5,7 @@ import "./App.css"
 import Home from "./Home.js"
 import Header from "./Header.js"
 import CreateQuestion from "./CreateQuestion.js"
+import Buttons from "./Buttons.js"
 
 function App() {
 	return (
