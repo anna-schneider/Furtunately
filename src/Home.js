@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
 import { Link } from "react-router-dom"
+import CreateQuestion from "./CreateQuestion"
 
 const Home = () => {
 	const [questions, updateQuestions] = useState([])
@@ -16,7 +17,7 @@ const Home = () => {
 					},
 				}
 			)
-			console.log(data.data.records)
+
 			updateQuestions(data.data.records)
 		}
 		apiCall()
@@ -25,6 +26,12 @@ const Home = () => {
 	return (
 		<div>
 			<h2>Choose Your Question And Find Your Fortune</h2>
+			<div>
+				{questions.map((item, index) => {
+					return <button key={index}>{item.fields.areas}</button>
+				})}
+			</div>
+			<CreateQuestion />
 		</div>
 	)
 }

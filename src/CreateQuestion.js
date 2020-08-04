@@ -3,6 +3,7 @@ import Axios from "axios"
 
 function CreateQuestion(props) {
 	const [area, updateArea] = useState("")
+	const [text, updateText] = useState("")
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
@@ -11,6 +12,7 @@ function CreateQuestion(props) {
 			{
 				fields: {
 					area: area,
+					text: text,
 				},
 			},
 			{
@@ -20,12 +22,24 @@ function CreateQuestion(props) {
 			}
 		)
 		updateArea(" ")
+		updateText(" ")
 		props.updateFetchQuestions(!props.updateFetchQuestions)
 	}
 
 	return (
 		<form>
-			<h3>Or Ask Your Own Question</h3>
+			<label htmlFor="Text"></label>
+			<textarea
+				name=""
+				id="text"
+				cols="20"
+				rows="10"
+				onChange={(e) => updateText(e.target.value)}
+				value={text}
+			></textarea>
+			<input type="submit" value="Ask Your Own Question" />
 		</form>
 	)
 }
+
+export default CreateQuestion
