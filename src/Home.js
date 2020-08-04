@@ -26,10 +26,14 @@ const Home = () => {
 
 	return (
 		<div>
-			<h2>Choose Your Question And Find Your Fortune</h2>
+			<h2>Choose Your Question &amp; Find Your Fortune</h2>
 			<div>
 				{questions.map((item, index) => {
-					return <button key={index}>{item.fields.areas}</button>
+					return (
+						<div className="Buttons">
+							<Buttons key={index} text={item.fields.areas} />
+						</div>
+					)
 				})}
 			</div>
 			<CreateQuestion />

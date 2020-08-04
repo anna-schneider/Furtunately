@@ -16,4 +16,19 @@ h1 {
 	font-family: "Circus";
 	text-align: center;
 	font-size: 60px;
+	color: rgb(51 51 51);
+}
+
+h2 {
+	font-family: "Rye";
+	text-align: center;
+	color: rgb(91 91 91);
+}
+
+.Buttons {
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* flex-direction: column; */
+	justify-content: center;
+	/* border: 2px solid red; */
 }
