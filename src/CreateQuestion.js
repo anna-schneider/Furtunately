@@ -32,8 +32,8 @@ function CreateQuestion(props) {
 			<textarea
 				name=""
 				id="text"
-				cols="20"
-				rows="10"
+				cols="15"
+				rows="5"
 				onChange={(e) => updateText(e.target.value)}
 				value={text}
 			></textarea>
