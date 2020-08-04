@@ -8,6 +8,14 @@ const Home = () => {
 	const [questions, updateQuestions] = useState([])
 	const [fetchQuestions, updateFetchQuestions] = useState(false)
 
+	// const showResults = () => {
+	// 	return (
+	// 		<h2>
+	// 			<Link to={`/results`${}} exact key={} exact></Link>
+	// 		</h2>
+	// 	)
+	// }
+
 	useEffect(() => {
 		const apiCall = async () => {
 			const data = await Axios.get(
@@ -27,11 +35,11 @@ const Home = () => {
 	return (
 		<div>
 			<h2>Choose Your Question &amp; Find Your Fortune</h2>
-			<div>
+			<div className="button-container">
 				{questions.map((item, index) => {
 					return (
-						<div className="home-buttons">
-							<Buttons key={index} text={item.fields.areas} />
+						<div key={index}>
+							<Buttons text={item.fields.areas} />
 						</div>
 					)
 				})}
