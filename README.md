@@ -103,14 +103,14 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Code Components     |    H     |     8 hrs      |     3 hrs     |    3 hrs    |
-| Setup State & API   |    H     |     6 hrs      |     4 hrs     |    4 hrs    |
-| Setup Route/Link    |    H     |     4 hrs      |     0 hrs     |    0 hrs    |
-| CSS                 |    L     |     6 hrs      |    .5 hrs     |   .5 hrs    |
-| Responsive design   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |    .5 hrs     |   .5 hrs    |
+| Code Components     |    H     |     8 hrs      |    6.5 hrs    |   6.5 hrs   |
+| Setup State & API   |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
+| Setup Route/Link    |    H     |     4 hrs      |    1.5 hrs    |   1.5 hrs   |
+| CSS                 |    L     |     6 hrs      |     2 hrs     |    2 hrs    |
+| Responsive Design   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |    1.5 hrs    |   1.5 hrs   |
 | Post MVP            |    L     |     5 hrs      |     0 hrs     |    0 hrs    |
-| TOTAL               |          |     35 hrs     |     0 hrs     |    0 hrs    |
+| TOTAL               |          |     35 hrs     |   16.5 hrs    |  16.5 hrs   |
 
 #### Helper Functions
 
