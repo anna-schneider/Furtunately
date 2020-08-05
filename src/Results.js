@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
+import { Link, useParams } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
 import Buttons from "./Buttons"
 
 ///START
 const Results = () => {
-	const [affirmation, updateAffirmation] = useState([])
+	const params = useParams()
+	//How to get userGenerated content back from Airtable
+	console.log(params)
+	const [affirmation, updateAffirmation] = useState("")
 	const [fetchAffirmation, updateFetchAffirmation] = useState(false)
 
 	useEffect(() => {
 		const secondApiCall = async () => {
-			const data = await Axios.get(
+			const response = await Axios.get(
 				"https://cors-anywhere.herokuapp.com/https://www.affirmations.dev",
 				{
 					headers: {
@@ -19,17 +23,17 @@ const Results = () => {
 				}
 			)
 
-			updateAffirmation(data.data.records)
-			console.log(data)
+			updateAffirmation(response.data.affirmation)
 		}
 		secondApiCall()
 	}, [fetchAffirmation])
 
 	return (
 		<div>
+			<h1 className="show-fortune">{affirmation}</h1>
+			<h2>{params.areas}</h2>
 			<LuckyNumbers />
-
-			<Buttons text="Ask Again" />
+			<Buttons href={"/"} text="Ask Again" />
 		</div>
 	)
 }

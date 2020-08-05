@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import { Link } from "react-router-dom"
 import CreateQuestion from "./CreateQuestion"
 import Buttons from "./Buttons"
 
@@ -30,8 +29,8 @@ const Home = () => {
 			<div className="button-container">
 				{questions.map((item, index) => {
 					return (
-						<div key={index}>
-							<Buttons text={item.fields.areas} />
+						<div className={item.fields.areas.toLowerCase()} key={index}>
+							<Buttons text={item.fields.areas} href={"/results"} />
 						</div>
 					)
 				})}

@@ -12,10 +12,16 @@ function App() {
 	return (
 		<div>
 			<Header />
+
 			<Route path="/" exact>
 				<Home />
 			</Route>
+
 			<Route path="/results" exact>
+				<Results />
+			</Route>
+
+			<Route path="/results/:userGenerated">
 				<Results />
 			</Route>
 		</div>
