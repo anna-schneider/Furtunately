@@ -33,8 +33,8 @@ function CreateQuestion(props) {
 			<textarea
 				name=""
 				id="text"
-				cols="15"
-				rows="5"
+				cols="10"
+				rows="3"
 				onChange={(e) => updateFeedback(e.target.value)}
 				value={feedback}
 			></textarea>

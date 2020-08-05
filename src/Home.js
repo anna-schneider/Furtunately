@@ -30,6 +30,7 @@ const Home = () => {
 					return (
 						<div className={item.fields.areas.toLowerCase()} key={index}>
 							<Buttons text={item.fields.areas} href={"/results"} />
+							<img src="/images/Card.jpg" alt="" />
 						</div>
 					)
 				})}

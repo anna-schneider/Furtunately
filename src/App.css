@@ -12,6 +12,10 @@
 	text-align: center;
 }
 
+.lucky-numbers {
+	text-align: center;
+}
+
 header {
 	font-family: "Circus";
 	text-align: center;
@@ -26,7 +30,7 @@ h1 {
 	text-align: center;
 	color: rgb(91 91 91);
 	margin-top: 25px;
-	margin-bottom: 65px;
+	margin-bottom: 0px;
 }
 
 .button-container {
@@ -43,6 +47,20 @@ h1 {
 .home-buttons {
 	text-decoration: none;
 	color: inherit;
+	text-align: center;
+}
+
+.prosperity,
+.work,
+.love,
+.friendship,
+.family {
+	margin-bottom: 10px;
+	background-image: url(./Images/Card.jpg);
+	background-size: cover;
+	width: 145px;
+	height: 195px;
+	border: 2px solid red;
 }
 
 /* .badge {

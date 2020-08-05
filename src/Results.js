@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
 import Buttons from "./Buttons"
 import CreateQuestion from "./CreateQuestion"
 
-///START
 const Results = () => {
 	const params = useParams()
-	//How to get userGenerated content back from Airtable
+
 	console.log(params)
 	const [affirmation, updateAffirmation] = useState("")
 	const [fetchAffirmation, updateFetchAffirmation] = useState(false)
@@ -35,7 +34,7 @@ const Results = () => {
 			<h2>{params.areas}</h2>
 			<LuckyNumbers />
 			<CreateQuestion />
-			<Buttons href={"/"} text="Ask Again" />
+			<Buttons className="restart-button" href={"/"} text="Ask Again" />
 		</div>
 	)
 }

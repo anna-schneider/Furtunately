@@ -9,7 +9,7 @@ const LuckyNumbers = () => {
 		return n.sort((a, b) => a - b).join(", ")
 	}
 
-	return <div>{randomNumbers(1, 50)}</div>
+	return <div className="lucky-numbers">{randomNumbers(1, 50)}</div>
 }
 
 export default LuckyNumbers
