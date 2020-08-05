@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import Axios from "axios"
 
 function CreateQuestion(props) {
-	const [area, updateArea] = useState("")
-	const [text, updateText] = useState("")
+	const [newArea, updateNewArea] = useState("")
+	const [newText, updateNewText] = useState("")
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
@@ -11,8 +11,8 @@ function CreateQuestion(props) {
 			"https://api.airtable.com/v0/appBngxxdOcilCD4C/Table%201",
 			{
 				fields: {
-					area: area,
-					text: text,
+					area: newArea,
+					text: newText,
 				},
 			},
 			{
@@ -21,21 +21,21 @@ function CreateQuestion(props) {
 				},
 			}
 		)
-		updateArea(" ")
-		updateText(" ")
+		updateNewArea(" ")
+		updateNewText(" ")
 		props.updateFetchQuestions(!props.updateFetchQuestions)
 	}
 
 	return (
-		<form>
-			<label htmlFor="Text"></label>
+		<form onSubmit={handleSubmit}>
+			<label htmlFor="new-question"></label>
 			<textarea
 				name=""
 				id="text"
 				cols="15"
 				rows="5"
-				onChange={(e) => updateText(e.target.value)}
-				value={text}
+				onChange={(e) => updateNewArea(e.target.value)}
+				value={newArea}
 			></textarea>
 			<input type="submit" value="Ask Your Own Question" />
 		</form>
