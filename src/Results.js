@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
 import Buttons from "./Buttons"
-import CreateQuestion from "./CreateQuestion"
+import SaveDetails from "./SaveDetails"
 
-const Results = () => {
+const Results = (props) => {
 	const params = useParams()
+
+	// props.name and props.setName
 
 	console.log(params)
 	const [affirmation, updateAffirmation] = useState("")
 	const [fetchAffirmation, updateFetchAffirmation] = useState(false)
 
 	useEffect(() => {
+		const details = {
+			name: props.name,
+			interest: params.area,
+			future: props.tense,
+		}
+
+		SaveDetails(details)
+
 		const secondApiCall = async () => {
 			const response = await Axios.get(
 				"https://cors-anywhere.herokuapp.com/https://www.affirmations.dev",
@@ -30,11 +40,14 @@ const Results = () => {
 
 	return (
 		<div>
+			<h2>{params.area}</h2>
+			{props.name && <div>Hi {props.name}</div>}
+			<div>{props.tense}</div>
 			<h1 className="show-fortune">{affirmation}</h1>
-			<h2>{params.areas}</h2>
+			<h3>Lucky Numbers</h3>
 			<LuckyNumbers />
-			<CreateQuestion />
-			<Buttons className="restart-button" href={"/"} text="Ask Again" />
+
+			<Buttons text={"Ask Again"} to={"/"} />
 		</div>
 	)
 }

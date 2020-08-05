@@ -14,6 +14,7 @@
 
 .lucky-numbers {
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 header {
@@ -29,8 +30,19 @@ h1 {
 	font-size: 15px;
 	text-align: center;
 	color: rgb(91 91 91);
-	margin-top: 25px;
+	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+h3 {
+	font-family: "Circus";
+	text-align: center;
+	margin-top: 25px;
+}
+
+form {
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 .button-container {
@@ -50,11 +62,23 @@ h1 {
 	text-align: center;
 }
 
-.prosperity,
+.show-fortune {
+	margin: (50px 0px);
+}
+
+.family,
 .work,
-.love,
+.love {
+	margin-bottom: 10px;
+	background-image: url(./Images/Card.jpg);
+	background-size: cover;
+	width: 100px;
+	height: 195px;
+	border: 2px solid red;
+}
+
 .friendship,
-.family {
+.prosperity {
 	margin-bottom: 10px;
 	background-image: url(./Images/Card.jpg);
 	background-size: cover;
