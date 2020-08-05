@@ -8,7 +8,6 @@ const LuckyNumbers = () => {
 		}
 		return n.sort((a, b) => a - b).join(", ")
 	}
-	// const randomNumbers = Math.random().toString().substr(2, 3)
 
 	return <div>{randomNumbers(1, 50)}</div>
 }

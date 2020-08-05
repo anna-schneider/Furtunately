@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import CreateQuestion from "./CreateQuestion"
 import Buttons from "./Buttons"
 
 const Home = () => {
@@ -35,7 +34,6 @@ const Home = () => {
 					)
 				})}
 			</div>
-			<CreateQuestion />
 		</div>
 	)
 }

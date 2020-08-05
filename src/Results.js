@@ -3,6 +3,7 @@ import Axios from "axios"
 import { Link, useParams } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
 import Buttons from "./Buttons"
+import CreateQuestion from "./CreateQuestion"
 
 ///START
 const Results = () => {
@@ -33,6 +34,7 @@ const Results = () => {
 			<h1 className="show-fortune">{affirmation}</h1>
 			<h2>{params.areas}</h2>
 			<LuckyNumbers />
+			<CreateQuestion />
 			<Buttons href={"/"} text="Ask Again" />
 		</div>
 	)
