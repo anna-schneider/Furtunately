@@ -39,10 +39,10 @@ const Home = (props) => {
 
 	return (
 		<div>
-			<h1>Enter Name, Choose Your Question &amp; Find Your Fortune</h1>
+			<h1>Enter Name, Choose Your Card &amp; Find Your Fortune</h1>
 
 			{hasInfo ? (
-				<div>thanks</div>
+				<div className="thanks">Thank you Fortune Seeker</div>
 			) : (
 				<form onSubmit={handleSubmit}>
 					<input
@@ -51,7 +51,7 @@ const Home = (props) => {
 							props.setName(e.target.value)
 						}}
 					/>
-					<div>
+					<div className="radio-button">
 						<input
 							type="radio"
 							id="tense-present"
@@ -60,7 +60,7 @@ const Home = (props) => {
 							checked="checked"
 							onChange={handleRadioChange}
 						/>
-						<label htmlFor="tense-present">Present</label>
+						<label htmlFor="tense-present">Your Present</label>
 						<input
 							type="radio"
 							id="tense-future"
@@ -68,7 +68,7 @@ const Home = (props) => {
 							value="true"
 							onChange={handleRadioChange}
 						/>
-						<label htmlFor="tense-future">Future</label>
+						<label htmlFor="tense-future">Your Future</label>
 					</div>
 					<input type="submit" value="Save" />
 				</form>
