@@ -134,6 +134,24 @@ form {
 		margin-bottom: 15px;
 	}
 
+	h2,
+	h3,
+	.show-fortune,
+	.lucky-numbers,
+	.home-buttons {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+
+	.greeting {
+		font-size: 40px;
+	}
+
+	.show-fortune {
+		margin-top: 15px;
+		margin-bottom: 65px;
+	}
+
 	.radio-button {
 		margin-bottom: 25px;
 		margin-top: 25px;
@@ -149,6 +167,12 @@ form {
 		background-image: url(./Images/Card.jpg);
 		width: 200px;
 		height: 275px;
+	}
+
+	.thanks {
+		margin-bottom: 25px;
+		margin-top: 18px;
+		font-size: 18px;
 	}
 
 	.save-button {
@@ -172,10 +196,24 @@ form {
 		margin-bottom: 15px;
 	}
 
+	h2,
+	h3,
+	.show-fortune,
+	.lucky-numbers,
+	.home-buttons,
+	.greeting {
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+
 	.radio-button {
 		margin-bottom: 10px;
 		margin-top: 25px;
 		font-size: 18px;
+	}
+
+	.thanks {
+		margin-bottom: 10px;
 	}
 
 	.family,
