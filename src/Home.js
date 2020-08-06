@@ -94,18 +94,3 @@ const Home = (props) => {
 }
 
 export default Home
-
-{
-	/* <form onSubmit={handleSubmit}>
-    <label htmlFor="feedback"></label>
-    <textarea
-      name=""
-      id="text"
-      cols="10"
-      rows="3"
-      onChange={(e) => updateFeedback(e.target.value)}
-      value={feedback}
-    ></textarea>
-    <input type="submit" value="Was that good for you?" />
-  </form> */
-}

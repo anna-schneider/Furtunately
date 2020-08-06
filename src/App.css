@@ -118,119 +118,11 @@ form {
 	font-family: "Rye";
 }
 
-/* .badge {
-	position: relative;
-	width: 400px;
-	border-radius: 50%;
-	transform: rotate(-50deg);
-} */
-
-/* header span {
-	height: 200px;
-	position: absolute;
-	width: 20px;
-	left: 0;
-	top: 0;
-	transform-origin: bottom center;
-} */
-
-/* .char1 {
-	transform: rotate(6deg);
-}
-
-.char2 {
-	transform: rotate(12deg);
-}
-
-.char3 {
-	transform: rotate(18deg);
-}
-
-.char4 {
-	transform: rotate(24deg);
-}
-
-.char5 {
-	transform: rotate(30deg);
-}
-
-.char6 {
-	transform: rotate(36deg);
-}
-
-.char7 {
-	transform: rotate(42deg);
-}
-
-.char8 {
-	transform: rotate(48deg);
-}
-
-.char9 {
-	transform: rotate(54deg);
-}
-
-.char10 {
-	transform: rotate(60deg);
-}
-
-.char11 {
-	transform: rotate(66deg);
-}
-
-.char12 {
-	transform: rotate(72deg);
-}
-
-.char13 {
-	transform: rotate(78deg);
-}
-
-.char14 {
-	transform: rotate(84deg);
-}
-
-.char15 {
-	transform: rotate(90deg);
-}
-
-.char16 {
-	transform: rotate(96deg);
-}
-
-.char17 {
-	transform: rotate(102deg);
-}
-
-.char18 {
-	transform: rotate(108deg);
-}
-
-.char19 {
-	transform: rotate(114deg);
-}
-
-.char20 {
-	transform: rotate(120deg);
-}
-
-.char21 {
-	transform: rotate(126deg);
-}
-
-.char22 {
-	transform: rotate(132deg);
-}
-
-.char23 {
-	transform: rotate(138deg);
-}
-
-.char24 {
-	transform: rotate(144deg);
-} */
-
 @media only screen and (min-width: 1050px) {
+	body {
+		background-color: gray;
+	}
+
 	header {
 		font-size: 50px;
 		margin-bottom: 25px;
@@ -255,13 +147,45 @@ form {
 	.prosperity {
 		margin-bottom: 10px;
 		background-image: url(./Images/Card.jpg);
-		background-size: cover;
-		width: 145px;
-		height: 195px;
-		/* border: 2px solid red; */
+		width: 200px;
+		height: 275px;
 	}
 
 	.save-button {
 		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+	body {
+		background-color: green;
+	}
+
+	header {
+		font-size: 45px;
+		margin-bottom: 15px;
+		margin-top: 35px;
+	}
+
+	h1 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.radio-button {
+		margin-bottom: 10px;
+		margin-top: 25px;
+		font-size: 18px;
+	}
+
+	.family,
+	.work,
+	.love,
+	.friendship,
+	.prosperity {
+		margin-bottom: 10px;
+		background-image: url(./Images/Card.jpg);
+		width: 200px;
+		height: 275px;
 	}
 }
