@@ -73,11 +73,27 @@ form {
 	color: rgb(91 91 91);
 }
 
+.home-button-container {
+	position: relative;
+	text-align: center;
+}
+
 .home-buttons {
 	text-decoration: none;
 	color: inherit;
-	text-align: center;
 	/* margin-left: 118px; */
+}
+
+.home .home-buttons {
+	position: relative;
+	top: 126px;
+	color: rgb(51 51 51);
+	border: 3px solid rgb(91 91 91);
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.restart-container {
+	text-align: center;
 }
 
 .radio-button {
@@ -96,7 +112,6 @@ form {
 	background-size: cover;
 	width: 100px;
 	height: 195px;
-	/* border: 2px solid red; */
 }
 
 .friendship,
@@ -106,7 +121,15 @@ form {
 	background-size: cover;
 	width: 145px;
 	height: 195px;
-	/* border: 2px solid red; */
+}
+
+.family .home-buttons {
+	left: 10px;
+}
+
+.work .home-buttons,
+.love .home-buttons {
+	left: 17px;
 }
 
 .thanks {
@@ -178,6 +201,31 @@ form {
 	.save-button {
 		font-size: 15px;
 	}
+
+	.family,
+	.work,
+	.love,
+	.friendship,
+	.prosperity {
+		margin-bottom: 10px;
+		background-image: url(./Images/Card.jpg);
+		width: 200px;
+		height: 275px;
+	}
+
+	.home .home-buttons {
+		position: relative;
+		top: 137px;
+		color: rgb(51 51 51);
+		border: 3px solid rgb(91 91 91);
+		background: rgba(255, 255, 255, 0.7);
+	}
+
+	.work .home-buttons,
+	.love .home-buttons,
+	.family .home-buttons {
+		left: 0px;
+	}
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1050px) {
@@ -225,5 +273,19 @@ form {
 		background-image: url(./Images/Card.jpg);
 		width: 200px;
 		height: 275px;
+	}
+
+	.home .home-buttons {
+		position: relative;
+		top: 137px;
+		color: rgb(51 51 51);
+		border: 3px solid rgb(91 91 91);
+		background: rgba(255, 255, 255, 0.7);
+	}
+
+	.work .home-buttons,
+	.love .home-buttons,
+	.family .home-buttons {
+		left: 0px;
 	}
 }

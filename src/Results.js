@@ -39,15 +39,16 @@ const Results = (props) => {
 	}, [fetchAffirmation])
 
 	return (
-		<div>
+		<div className="results">
 			<h2>{params.area}</h2>
 			{props.name && <div className="greeting">Hello {props.name}</div>}
 
 			<h1 className="show-fortune">{affirmation}</h1>
 			<h3>Lucky Numbers</h3>
 			<LuckyNumbers />
-
-			<Button text={"Ask Again"} to={"/"} />
+			<div className="restart-container">
+				<Button text={"Ask Again"} to={"/"} />
+			</div>
 		</div>
 	)
 }

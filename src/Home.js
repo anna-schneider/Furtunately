@@ -38,7 +38,7 @@ const Home = (props) => {
 	}, [fetchQuestions])
 
 	return (
-		<div>
+		<div className="home">
 			<h1>Enter Name, Choose Your Card &amp; Find Your Fortune</h1>
 
 			{hasInfo ? (
@@ -79,7 +79,10 @@ const Home = (props) => {
 			<div className="button-container">
 				{questions.map((item, index) => {
 					return (
-						<div className={item.fields.areas.toLowerCase()} key={index}>
+						<div
+							className={`home-button-container ${item.fields.areas.toLowerCase()}`}
+							key={index}
+						>
 							<Button
 								text={item.fields.areas}
 								to={`/results/${item.fields.areas}`}
