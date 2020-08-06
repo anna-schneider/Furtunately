@@ -4,6 +4,7 @@ import "./App.css"
 import Home from "./Home.js"
 import Header from "./Header.js"
 import Results from "./Results"
+import Footer from "./Footer"
 
 function App() {
 	const [name, setName] = useState("")
@@ -24,6 +25,8 @@ function App() {
 			<Route path="/results/:area">
 				<Results name={name} tense={tense} />
 			</Route>
+
+			<Footer />
 		</div>
 	)
 }

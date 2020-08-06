@@ -2,11 +2,6 @@ import React from "react"
 import "./App.js"
 
 const Header = (props) => {
-	// {
-	// 	;`${function () {
-	// 		;${"header"}.lettering()
-	// 	}}`
-	// }
 	return (
 		<div id="page-wrap">
 			<div className="badge">

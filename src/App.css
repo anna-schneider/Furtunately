@@ -9,7 +9,8 @@
 }
 
 body {
-	background-color: rgb(237 215 172);
+	/* background-color: rgb(237 215 172); */
+	background-image: url(./Images/swirl_pattern.png);
 }
 
 .App {
@@ -121,7 +122,7 @@ form {
 	margin-bottom: 10px;
 	background-image: url(./Images/Card.jpg);
 	background-size: cover;
-	width: 100px;
+	width: 120px;
 	height: 195px;
 }
 
@@ -215,17 +216,6 @@ form {
 		font-size: 15px;
 	}
 
-	.family,
-	.work,
-	.love,
-	.friendship,
-	.prosperity {
-		margin-bottom: 10px;
-		background-image: url(./Images/Card.jpg);
-		width: 200px;
-		height: 275px;
-	}
-
 	.home .home-buttons {
 		position: relative;
 		font-size: 22px;
@@ -245,6 +235,11 @@ form {
 		margin: 50px 450px 25px 450px;
 		padding: 10px 0px;
 		font-size: 25px;
+	}
+
+	.footer {
+		font-family: "Rye";
+		border: 2px solid red;
 	}
 }
 
