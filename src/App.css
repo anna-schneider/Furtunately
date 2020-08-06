@@ -22,7 +22,7 @@ body {
 header {
 	font-family: "Circus";
 	text-align: center;
-	font-size: 27px;
+	font-size: 32px;
 	color: rgb(51 51 51);
 	margin-top: 30px;
 }
@@ -190,12 +190,13 @@ form {
 	.show-fortune,
 	.lucky-numbers {
 		font-size: 40px;
-		margin-bottom: 15px;
+		margin-bottom: 65px;
 		color: rgb(61 61 61);
 	}
 
 	.greeting {
 		font-size: 40px;
+		margin-top: 65px;
 	}
 
 	.show-fortune {
@@ -246,7 +247,7 @@ form {
 	}
 
 	.restart-container {
-		margin: 50px 450px 25px 450px;
+		margin: 50px 550px 25px 550px;
 		padding: 10px 0px;
 		font-size: 25px;
 	}
@@ -254,6 +255,19 @@ form {
 	.footer {
 		font-family: "Rye";
 		border: 2px solid red;
+	}
+
+	.show-fortune {
+		margin: 0px 175px 15px 175px;
+	}
+
+	.crystal-ball {
+		width: 825px;
+		height: 825px;
+	}
+
+	.footer {
+		font-size: 20px;
 	}
 }
 
@@ -325,5 +339,13 @@ form {
 
 	.restart-container {
 		margin: 20px 320px;
+	}
+
+	.show-fortune {
+		margin: 0px 175px 15px 175px;
+	}
+	.crystal-ball {
+		width: 825px;
+		height: 825px;
 	}
 }
