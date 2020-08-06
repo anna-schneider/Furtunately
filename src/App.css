@@ -8,6 +8,10 @@
 	font-style: normal;
 }
 
+body {
+	background-color: rgb(237 215 172);
+}
+
 .App {
 	text-align: center;
 }
@@ -102,11 +106,15 @@ form {
 	background-size: cover;
 	width: 145px;
 	height: 195px;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .thanks {
 	text-align: center;
+	font-family: "Rye";
+}
+
+.save-button {
 	font-family: "Rye";
 }
 
@@ -221,3 +229,39 @@ form {
 .char24 {
 	transform: rotate(144deg);
 } */
+
+@media only screen and (min-width: 1050px) {
+	header {
+		font-size: 50px;
+		margin-bottom: 25px;
+		margin-top: 45px;
+	}
+
+	h1 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.radio-button {
+		margin-bottom: 25px;
+		margin-top: 25px;
+		font-size: 20px;
+	}
+
+	.family,
+	.work,
+	.love,
+	.friendship,
+	.prosperity {
+		margin-bottom: 10px;
+		background-image: url(./Images/Card.jpg);
+		background-size: cover;
+		width: 145px;
+		height: 195px;
+		/* border: 2px solid red; */
+	}
+
+	.save-button {
+		font-size: 15px;
+	}
+}

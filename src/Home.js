@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import Buttons from "./Buttons"
+import Button from "./Button"
 
 const Home = (props) => {
 	const [questions, updateQuestions] = useState([])
@@ -70,7 +70,9 @@ const Home = (props) => {
 						/>
 						<label htmlFor="tense-future">Your Future</label>
 					</div>
-					<input type="submit" value="Save" />
+					<div className="save-button">
+						<input type="submit" value="Save" />
+					</div>
 				</form>
 			)}
 
@@ -78,7 +80,7 @@ const Home = (props) => {
 				{questions.map((item, index) => {
 					return (
 						<div className={item.fields.areas.toLowerCase()} key={index}>
-							<Buttons
+							<Button
 								text={item.fields.areas}
 								to={`/results/${item.fields.areas}`}
 							/>

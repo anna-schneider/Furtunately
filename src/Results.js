@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Axios from "axios"
 import { useParams, Link } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
-import Buttons from "./Buttons"
+import Button from "./Button"
 import SaveDetails from "./SaveDetails"
 
 const Results = (props) => {
@@ -47,7 +47,7 @@ const Results = (props) => {
 			<h3>Lucky Numbers</h3>
 			<LuckyNumbers />
 
-			<Buttons text={"Ask Again"} to={"/"} />
+			<Button text={"Ask Again"} to={"/"} />
 		</div>
 	)
 }
