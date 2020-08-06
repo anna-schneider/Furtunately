@@ -9,19 +9,14 @@
 }
 
 body {
-	/* background-color: rgb(237 215 172); */
+	font-family: "Rye";
 	background-image: url(./Images/swirl_pattern.png);
-}
-
-.App {
-	text-align: center;
 }
 
 .lucky-numbers {
 	text-align: center;
-	font-family: "Rye";
-	margin-bottom: 50px;
-	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 header {
@@ -33,25 +28,23 @@ header {
 }
 
 h1 {
-	font-family: "Rye";
 	font-size: 12px;
 	text-align: center;
 	color: rgb(61 61 61);
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 0px;
 }
 
 h2 {
 	text-align: center;
-	font-family: "Circus";
-	margin-top: 50px;
-	color: rgb(61 61 61);
+	margin-top: 10px;
+	margin-bottom: 0px;
+	color: rgb(91 91 91);
 }
 
 h3 {
-	font-family: "Circus";
 	text-align: center;
-	margin-top: 35px;
+	margin-top: 5px;
 	font-size: 25px;
 }
 
@@ -62,9 +55,8 @@ form {
 
 .greeting {
 	text-align: center;
-	font-family: "Rye";
 	font-size: 25px;
-	margin-bottom: 10px;
+	margin-top: 25px;
 }
 
 .button-container {
@@ -75,6 +67,7 @@ form {
 	font-family: "Circus";
 	font-size: 25px;
 	color: rgb(91 91 91);
+	margin-top: 30px;
 }
 
 .home-button-container {
@@ -86,12 +79,10 @@ form {
 .home-buttons {
 	text-decoration: none;
 	color: inherit;
-	/* margin-left: 118px; */
 }
 
 .home .home-buttons {
 	position: relative;
-	font-family: "Rye";
 	top: 100px;
 	color: rgb(51 51 51);
 	border: 3px solid rgb(91 91 91);
@@ -100,20 +91,32 @@ form {
 
 .restart-container {
 	text-align: center;
-	font-family: "Rye";
 	color: rgb(61 61 61);
 	border: 2px solid rgb(91 91 91);
-	margin: 0px 55px;
+	margin: 50px 130px 10px 130px;
+	padding: 7px 0px;
+	background-color: rgba(213, 150, 38, 0.6);
 }
 
 .radio-button {
-	font-family: "Rye";
 	font-size: 16px;
 	color: rgb(61 61 61);
+	margin-top: 10px;
 }
 
 .show-fortune {
-	margin: (50px 0px);
+	align-self: center;
+	margin: 0px 70px;
+}
+
+.crystal-ball {
+	background-image: url(./Images/crystal-ball.png);
+	background-size: contain;
+	width: 325px;
+	height: 325px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
 .family,
@@ -141,18 +144,29 @@ form {
 
 .work .home-buttons,
 .love .home-buttons {
-	left: 17px;
+	left: 11px;
 }
 
 .thanks {
 	text-align: center;
-	font-family: "Rye";
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .save-button {
-	font-family: "Rye";
+	/* font-family: "Rye"; */
+}
+
+.results {
+	color: rgb(81 81 81);
+}
+
+.footer {
+	border: 2px solid red;
+	font-size: 10px;
+	text-align: center;
+	margin: 15px 25px 0px 25px;
+	padding: 5px 20px;
 }
 
 @media only screen and (min-width: 1050px) {
@@ -270,12 +284,13 @@ form {
 	}
 
 	.radio-button {
-		margin-bottom: 10px;
-		margin-top: 25px;
+		margin: 10px 0px;
+
 		font-size: 18px;
 	}
 
 	.lucky-numbers {
+		margin-bottom: 20px;
 	}
 
 	.thanks {
@@ -309,6 +324,6 @@ form {
 	}
 
 	.restart-container {
-		margin: 20px 60px;
+		margin: 20px 320px;
 	}
 }

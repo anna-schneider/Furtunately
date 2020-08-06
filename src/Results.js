@@ -40,12 +40,18 @@ const Results = (props) => {
 
 	return (
 		<div className="results">
-			<h2>{params.area}</h2>
 			{props.name && <div className="greeting">Hello {props.name}</div>}
 
-			<h1 className="show-fortune">{affirmation}</h1>
+			<h2>{params.area}</h2>
+			<div className="crystal-ball-container">
+				<div className="crystal-ball">
+					<h1 className="show-fortune">{affirmation}</h1>
+				</div>
+			</div>
 			<h3>Lucky Numbers</h3>
+
 			<LuckyNumbers />
+
 			<div className="restart-container">
 				<Button text={"Ask Again"} to={"/"} />
 			</div>
