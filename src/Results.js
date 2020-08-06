@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import LuckyNumbers from "./LuckyNumbers"
 import Button from "./Button"
 import SaveDetails from "./SaveDetails"

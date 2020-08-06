@@ -1,10 +1,8 @@
-import React, { Component, useState, useEffect } from "react"
-import { Router, Route, Link } from "react-router-dom"
-import Axios from "axios"
+import React, { useState } from "react"
+import { Route } from "react-router-dom"
 import "./App.css"
 import Home from "./Home.js"
 import Header from "./Header.js"
-import LuckyNumbers from "./LuckyNumbers.js"
 import Results from "./Results"
 
 function App() {
