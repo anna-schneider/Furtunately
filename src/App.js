@@ -11,7 +11,7 @@ function App() {
 	const [tense, setTense] = useState("false")
 
 	return (
-		<div>
+		<>
 			<Header />
 
 			<Route path="/" exact>
@@ -27,7 +27,7 @@ function App() {
 			</Route>
 
 			<Footer />
-		</div>
+		</>
 	)
 }
 

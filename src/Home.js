@@ -70,9 +70,7 @@ const Home = (props) => {
 						/>
 						<label htmlFor="tense-future">Your Future</label>
 					</div>
-					<div className="save-button">
-						<input type="submit" value="Save" />
-					</div>
+					<input className="save-button" type="submit" value="Save" />
 				</form>
 			)}
 

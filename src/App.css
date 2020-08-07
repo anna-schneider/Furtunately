@@ -13,6 +13,17 @@
 	font-style: normal;
 }
 
+html,
+body,
+#root {
+	height: 100%;
+}
+
+#root {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
 body {
 	font-family: "Rye";
 	background-image: url(./Images/swirl_pattern.png);
@@ -46,10 +57,6 @@ body {
 	}
 }
 
-.lucky-numbers {
-	text-align: center;
-}
-
 header {
 	font-family: "Circus";
 	text-align: center;
@@ -76,7 +83,6 @@ h2 {
 h3 {
 	text-align: center;
 	margin-top: 5px;
-	font-size: 25px;
 }
 
 form {
@@ -84,10 +90,19 @@ form {
 	margin-bottom: 10px;
 }
 
+h3,
+.greeting,
+.button-container {
+	font-size: 25px;
+}
+
 .greeting {
 	text-align: center;
-	font-size: 25px;
 	margin-top: 25px;
+}
+
+.lucky-numbers {
+	text-align: center;
 }
 
 .button-container {
@@ -96,7 +111,6 @@ form {
 	flex-direction: row;
 	justify-content: space-around;
 	font-family: "Circus";
-	font-size: 25px;
 	color: rgb(91 91 91);
 	margin-top: 30px;
 }
@@ -186,8 +200,12 @@ form {
 	margin-bottom: 10px;
 }
 
+input {
+	font-family: "Rye";
+}
+
 .save-button {
-	/* color: red; */
+	margin-top: 2px;
 }
 
 .results {
@@ -195,15 +213,11 @@ form {
 }
 
 .footer {
-	display: flex;
-	flex-shrink: 0;
 	border: 3px solid rgb(91 91 91);
 	font-size: 10px;
 	text-align: center;
-	margin: 15px 25px 0px 25px;
+	margin: 12px 25px 0px 25px;
 	padding: 5px 20px;
-	position: sticky;
-	bottom: 0;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1050px) {
@@ -224,7 +238,7 @@ form {
 	.lucky-numbers,
 	.home-buttons,
 	.greeting {
-		font-size: 35px;
+		font-size: 30px;
 		margin-bottom: 15px;
 	}
 
@@ -240,9 +254,6 @@ form {
 
 	.thanks {
 		margin-bottom: 45px;
-	}
-
-	.home-buttons {
 	}
 
 	.family,
@@ -289,7 +300,6 @@ form {
 
 	.crystal-ball-container {
 		height: 770px;
-
 		margin-top: -110px;
 	}
 

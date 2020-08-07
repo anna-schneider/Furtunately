@@ -11,7 +11,9 @@ const Results = (props) => {
 	// props.name and props.setName
 
 	console.log(params)
-	const [affirmation, updateAffirmation] = useState("???")
+	const [affirmation, updateAffirmation] = useState(
+		"Searching the void for your fortune"
+	)
 	const [fetchAffirmation, updateFetchAffirmation] = useState(false)
 
 	useEffect(() => {

@@ -105,13 +105,13 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Code Components     |    H     |     8 hrs      |    8.5 hrs    |   8.5 hrs   |
 | Setup State & API   |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
-| Setup Route/Link    |    H     |     4 hrs      |     2 hrs     |    2 hrs    |
+| Setup Route/Link    |    H     |     4 hrs      |    2.5 hrs    |   2.5 hrs   |
 | CSS                 |    L     |     6 hrs      |    8.5 hrs    |   8.5 hrs   |
-| Responsive Design   |    H     |     3 hrs      |    4.5 hrs    |   4.5 hrs   |
+| Responsive Design   |    H     |     3 hrs      |     6 hrs     |    6 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
 | Error Handling      |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
 | Post MVP            |    L     |     5 hrs      |     2 hrs     |    2 hrs    |
-| TOTAL               |          |     35 hrs     |   35.5 hrs    |  35.5 hrs   |
+| TOTAL               |          |     35 hrs     |   37.5 hrs    |  37.5 hrs   |
 
 #### Helper Functions
 
