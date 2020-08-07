@@ -45,7 +45,13 @@ const Results = (props) => {
 			<h2>{params.area}</h2>
 			<div className="crystal-ball-container">
 				<div className="crystal-ball">
-					<h1 className="show-fortune">{affirmation}</h1>
+					<h1 className="show-fortune">
+						{affirmation.split("").map((letter, index) => (
+							<span className={index % 2 === 0 ? "burn" : "fire"}>
+								{letter}
+							</span>
+						))}
+					</h1>
 				</div>
 			</div>
 			<h3>Lucky Numbers</h3>
