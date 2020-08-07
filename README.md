@@ -103,14 +103,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Code Components     |    H     |     8 hrs      |    6.5 hrs    |   6.5 hrs   |
+| Code Components     |    H     |     8 hrs      |    8.5 hrs    |   8.5 hrs   |
 | Setup State & API   |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
-| Setup Route/Link    |    H     |     4 hrs      |    1.5 hrs    |   1.5 hrs   |
-| CSS                 |    L     |     6 hrs      |     2 hrs     |    2 hrs    |
-| Responsive Design   |    H     |     3 hrs      |     0 hrs     |    0 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |    1.5 hrs    |   1.5 hrs   |
-| Post MVP            |    L     |     5 hrs      |     0 hrs     |    0 hrs    |
-| TOTAL               |          |     35 hrs     |   16.5 hrs    |  16.5 hrs   |
+| Setup Route/Link    |    H     |     4 hrs      |     2 hrs     |    2 hrs    |
+| CSS                 |    L     |     6 hrs      |    8.5 hrs    |   8.5 hrs   |
+| Responsive Design   |    H     |     3 hrs      |    4.5 hrs    |   4.5 hrs   |
+| Create CRUD Actions |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Error Handling      |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Post MVP            |    L     |     5 hrs      |     2 hrs     |    2 hrs    |
+| TOTAL               |          |     35 hrs     |   35.5 hrs    |  35.5 hrs   |
 
 #### Helper Functions
 
@@ -122,14 +123,30 @@ src
 
 ### Post-MVP
 
-- CSS animations\_
+- CSS animations
 
 ---
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> Maps through array of of data from Airtable. On each loop through the map, returns a jsx component that contains the button component, uses props on the button to pass through text/href value which is a string dynamically concatenated to create a unique route for each button.
+
+````<div className="button-container">
+				{questions.map((item, index) => {
+					return (
+						<div
+							className={`home-button-container ${item.fields.areas.toLowerCase()}`}
+							key={index}
+						>
+							<Button
+								text={item.fields.areas}
+								to={`/results/${item.fields.areas}`}
+							/>
+							<img src="/images/Card.jpg" alt="" />
+						</div>
+            ```
 
 ### Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
+````
