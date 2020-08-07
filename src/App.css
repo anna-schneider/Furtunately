@@ -13,6 +13,7 @@ body {
 	background-image: url(./Images/swirl_pattern.png);
 }
 
+/* Animation inspired by: https://codepen.io/atnyman/pen/cgGuL/ */
 .fire {
 	animation: animation 1s ease-in-out infinite alternate;
 	-moz-animation: animation 1s ease-in-out infinite alternate;
@@ -194,7 +195,7 @@ form {
 	border: 3px solid rgb(91 91 91);
 	font-size: 10px;
 	text-align: center;
-	margin: 35px 25px 0px 25px;
+	margin: 15px 25px 0px 25px;
 	padding: 5px 20px;
 }
 
@@ -366,10 +367,9 @@ form {
 	}
 
 	.restart-container {
-		margin: 50px auto 25px auto;
+		margin: 50px 550px 25px 550px;
 		padding: 10px 0px;
 		font-size: 25px;
-		width: fit-content;
 	}
 
 	.show-fortune {
