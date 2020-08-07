@@ -8,8 +8,6 @@ const Home = (props) => {
 	const [hasInfo, setHasInfo] = useState(false)
 	const [radioState, setRadioState] = useState(props.tense)
 
-	// props.name and props.setName
-
 	function handleSubmit(e) {
 		props.setTense(radioState)
 		e.preventDefault()

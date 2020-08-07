@@ -8,8 +8,6 @@ import SaveDetails from "./SaveDetails"
 const Results = (props) => {
 	const params = useParams()
 
-	// props.name and props.setName
-
 	console.log(params)
 	const [affirmation, updateAffirmation] = useState(
 		"Searching the void for your fortune"
