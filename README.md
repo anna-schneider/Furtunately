@@ -1,6 +1,6 @@
 ### Overview
 
-Fortunately is a fortune-telling app. A player can either choose from a selection of topics to ask a question, or submit their own custom question.
+Fortunately is a fortune-telling app. A player can choose from a selection of topics to ask a question about that topic in their present or their future.
 The player will then see their results along with their lucky numbers.
 
 ### Wireframes
@@ -32,13 +32,10 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1596417170/Fortunately/Result
 
 #### Libraries
 
-> Use this section to list all supporting libraries and their role in the project.
-
-|     Library     | Description                 |
-| :-------------: | :-------------------------- |
-|  React Router   | _For main site navigation._ |
-| React Bootstrap | _For styling resources._    |
-|      Axios      | _For API data._             |
+|   Library    | Description                 |
+| :----------: | :-------------------------- |
+| React Router | _For main site navigation._ |
+|    Axios     | _For API data._             |
 
 <br>
 
@@ -112,14 +109,6 @@ src
 | Error Handling      |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
 | Post MVP            |    L     |     5 hrs      |     2 hrs     |    2 hrs    |
 | TOTAL               |          |     35 hrs     |   37.5 hrs    |  37.5 hrs   |
-
-#### Helper Functions
-
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
-
-| Function | Description |
-| :------: | :---------- |
-|   TBD    |             |
 
 ### Post-MVP
 
